@@ -1,12 +1,24 @@
 body {position: relative;
         width: 100%;
         height: 100%:
-        display: inline-block;}
+        display: inline-block;
+        background-color: #9687;
+        background-image: radial-gradient(white 6%, transparent 10%),radial-gradient(white 6%, transparent 10%);
+        background-size: 40px 40px;
+        animation-name: backgroundmovement;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;}
 
+/* BACKGROUND IMAGE */ 
+@keyframes backgroundmovement {0%{background-position 0px 0px, 60px 60px}{background-position: 60px 60px, 120px 120px;}}
+
+
+/* HEADER */
 span {text-align: center;
     font-family: "Gugi", cursive;
     color: mediumvioletred;
-font-size: 2em;}
+    font-size: 3em;}
 
 
 /* TEXTAREA */
