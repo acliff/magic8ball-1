@@ -31,6 +31,16 @@ textarea {position: relative;
           color: white;
           background-color: mediumvioletred;}
 
+/* BUTTON */
+.btn {position: relative;
+        top: 1em;
+        z-index: 1;}
+
+.btnText {color: grey;
+        font-size: 1em;
+        width: 50%;}
+
+
 /* THE ANSWER TO YOUR QUESTION + ALIGNMENT */
 .answer {text-align: center;
         padding-left: 2em;}
