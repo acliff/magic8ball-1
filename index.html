@@ -4,53 +4,45 @@
         <title>Magic 8 Ball</title>
         <link rel="stylesheet" href="main.css">
         <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
     
-    <body>
-        <div class="app" align="center">
+        <body>
+            <div id="app">
+                
+            <!-- HEADER --> 
+            <h1>Magic 8 Ball</h1>    
             
-
+            
             <!-- QUESTION -->
-            <div class="question">
-            <span>Ask a Yes or No Question</span>
-            <p>{{ question }}</p>
-                <br>
-                <textarea v-model="question" placeholder="ask your question"></textarea>
-            </div>
-            
-        
-            <!-- IMAGE / SUBMIT BUTTON -->
-            <div class="image">
-                <button type="submit" name="submit" v-bind="image">
-                <img src="8ball.jpg" alt="8ball" v-on:click="animation">
-                </button>
-            </div>
+            <p>Ask a Yes or No Question</p>
+            <input type="text" name="question" id="question" v-model="input"/>
             
             
-              <!-- ASK BUTTON -->
-            <div class="btn" v-bind="submit">
-                <button class="btnText">ASK</button>
-            </div>
+            <!-- IMAGE -->
+            <div class="eight-ball" align="center">
             
-            
+                
             <!-- ANSWER -->
-            <div class="answer" v-for="answer in answer" v-on:submit="submitAnswer"></div>
-          
-            
-            
-            <!--ANIMATION -->
-            <div class="animation">Hmm let me think<span class="one">.</span><span class="two">.</span><span class="three">.</span>
-            </div>
-    
+                <div class="answer">
+                    <p id="eight">8</p>
+                    <p id="answer"></p>
+                </div>
+                
         
-            <!-- JAVASCRIPT & VUE SOURCEs -->
-            <script src="https://cdn.jsdelivr.net/npm/vue"></script>    
+            <!-- BUTTON -->
+            <button id="button">ASK</button>
+            
+            
+            <!-- VUE & JAVASCRIPT -->
+            <script src="https://cdn.jsdelivr.net/npm/vue"></script> 
             <script src="script.js"></script>
             
+            </div>    
         </div>
     </body>
 </html>
+
+    
 
     
         
