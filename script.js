@@ -24,6 +24,15 @@ var button = document.getElementById("button");
 
 
 
+// THINKING LOOP //
+ var count = 0;
+ setInterval(function()
+  {count++;
+     var dots = new Array (count %10).join('.');
+     document.getElementById('animation').innerHTML = "Hmm let me think" + dots;},
+   1000);
+
+
 // OUTPUT ARRAY //
 var output = ["It is certain",
                 "Without a doubt",
